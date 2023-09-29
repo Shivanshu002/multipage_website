@@ -25,15 +25,14 @@ function Navbar() {
                 </ul>
                 {
                     tog ?
-                        <AiOutlineClose onClick={() => { setTog(!tog) }} className='text-[#f06d02] text-5xl md:hidden block' />
+                        <AiOutlineClose onClick={() => { setTog(!tog) }} className='text-[#f06d02] text-5xl  md:hidden block' />
                         :
-                        <MdMenuOpen onClick={() => { setTog(!tog) }} className='text-[#f06d02] text-5xl md:hidden block' />
+                        <MdMenuOpen onClick={() => { setTog(!tog) }} className='text-[#f06d02] text-5xl  md:hidden block' />
                 }
             </header>
-
             {/* For responsive Menu bar */}
 
-            <ul className={`duration-300 md:hidden p-2 gap-7 text-white fixed bg-[#f06d02] top-[97px] ${tog ? 'left-[0]' : 'left-[-100%]'}`}>
+            <ul className={`z-10 duration-300 md:hidden p-5 gap-7 text-white w-[300px] text-center text-2xl fixed bg-[#f06d02] top-[90px] ${tog ? 'left-[0]' : 'left-[-100%]'}`}>
                 <li className='p-5'><Link to='/'>Home</Link></li>
                 <li className='p-5'><Link to='/services'>Services</Link></li>
                 <li className='p-5'><Link to='/about'>About</Link></li>
@@ -41,8 +40,6 @@ function Navbar() {
                 <li className='p-5'><Link to='/career'>Career</Link></li>
 
             </ul>
-
-
         </>
     )
 }

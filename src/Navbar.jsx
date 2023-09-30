@@ -21,7 +21,7 @@ function Navbar() {
                     <li><Link to='/services'> Services</Link></li>
                     <li><Link to='about'>About</Link></li>
                     <li><Link to='/contact'> Contact</Link></li>
-                    <li><Link to='/career'>Career</Link></li>
+                    {/* <li><Link to='/career'>Career</Link></li> */}
                 </ul>
                 {
                     tog ?
@@ -32,12 +32,12 @@ function Navbar() {
             </header>
             {/* For responsive Menu bar */}
 
-            <ul className={`z-10 duration-300 md:hidden p-5 gap-7 text-white w-[300px] text-center text-2xl fixed bg-[#f06d02] top-[90px] ${tog ? 'left-[0]' : 'left-[-100%]'}`}>
+            <ul className={`z-50 duration-300 md:hidden p-5 gap-7 text-white w-[300px] text-center text-2xl fixed bg-[#f06d02] top-[90px] ${tog ? 'left-[0]' : 'left-[-100%]'}`}>
                 <li className='p-5'><Link to='/'>Home</Link></li>
                 <li className='p-5'><Link to='/services'>Services</Link></li>
                 <li className='p-5'><Link to='/about'>About</Link></li>
                 <li className='p-5'><Link to='/contact'>Contact</Link></li>
-                <li className='p-5'><Link to='/career'>Career</Link></li>
+                {/* <li className='p-5'><Link to='/career'>Career</Link></li> */}
 
             </ul>
         </>

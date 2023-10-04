@@ -13,7 +13,7 @@ function About() {
                     <h1 className="text-2xl text-[#ffff] text-center">Sample text. Click to select the text box. Click again or double click to start editing the text.</h1>
                 </div>
                 <div className='flex justify-center'>
-                    <img src={WeDo} className='w-[900px]' />
+                    <img src={WeDo} className=' w-[900px]' />
                 </div>
 
                 <div className='flex justify-between gap-3 md:flex-row flex-col container mx-auto p-2'>

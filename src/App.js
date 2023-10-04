@@ -6,6 +6,7 @@ import Services from './component/Services';
 import Career from './component/Career';
 import Contact from './component/Contact';
 import About from './component/About';
+import Footer from '../src/Footer';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
-
+      {/* <Footer /> */}
     </>
   );
 }
